@@ -1,8 +1,13 @@
-# from rest_framework import routers
-# from .viewsets import estudianteViewSet
-# router = routers.SimpleRouter()
-# router.register('estudiante',estudianteViewSet)
-# urlpatterns = router.urls
+from . import views
+from django.urls import path
+
+urlpatterns =[
+    path('',views.index,name='index'),
+    path('contactanos/',views.contactanos,name='contactanos'),
+    path('contactanos/index/',views.index, name="index"),
+    path('listarEstudiantes/',views.listarEstudiantes,name='listarEstudiantes'),
+    path('nosotros/',views.nosotros,name ='nosotros')
+]
 
 
     
