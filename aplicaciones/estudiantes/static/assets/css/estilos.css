@@ -1,7 +1,93 @@
+/*ESTILOS DASHBOARD */
+:root {
+    --primary: #111B54;
+    --light: #ffffff;
+    --grey: #efefef;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.bg-primary { background-color: var(--primary) !important; }
+
+.bg-light { background-color: var(--light) !important; }
+
+.bg-grey { background-color: var(--grey) !important; }
+
+.bg-mix { background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0); }
+
+/*
+.btn-primary {
+    background-color: var(--primary);
+    border: 0;
+}
+*/
+
+
+
+
+.btn-primary:hover {
+    background-color: var(--primary);
+}
+
+#sidebar-container {
+    min-height: 100vh;
+}
+  
+#sidebar-container .logo{
+    padding: 0.875rem 1.25rem;
+}
+  
+#sidebar-container .menu {
+    width: 18rem;
+}
+
+@media (max-width: 768px) {
+    #sidebar-container {
+      display: none;
+    }
+    .stat {
+        border: 0;
+    }
+  }
+
+.seleccion{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+
+}
+
+
+.mi-btn{
+  margin: 7px;
+  width: 45%;
+}
+
+.seleccion:focus{
+  border-color: #5fcf80;
+}
+
+/* FIN DASHBOARD */
 
 .contact .container .form-group .miscomponentes:focus{
   border-color: #5fcf80;
 }
+
 
 
 .contact .container .form-group .miscomponentes{
@@ -41,6 +127,8 @@
   padding: 8px;
 }
 
+
+
 /*Estilo formulario inicio sesión*/
 
 input[type=text], input[type=password],input[type=number], input[type=date]{
@@ -56,6 +144,11 @@ input[type=text], input[type=password],input[type=number], input[type=date]{
 
 input[type=text]:focus, input[type=password]:focus,input[type=number]:focus, input[type=date]:focus{
   border-color: #5fcf80;
+}
+
+.sidebar{
+  width: 250px;
+  height: 100vh;
 }
 
 

@@ -69,7 +69,15 @@
             <h2>Bievenido</h2>  
           </div>
         </div><!-- End Breadcrumbs -->
-	
+    <div class="container mt-3">
+      <select>
+        {% for e in estudiantes %}
+        <option>
+          {{e.grupo.nombre}}
+        </option>
+        {% endfor %}
+      </select>
+    </div>
 		<div class="container mt-5">
 			<div class="row">
 				<div class="col">
@@ -95,6 +103,15 @@
 								{% endfor %}
 							</tbody>
 						</table>
+            
+            <!-- <select>
+              {% for e in estudiantes %}
+              <option>
+                {{e.grupo.nombre}}
+              </option>
+              {% endfor %}
+            </select> -->
+            
 					</div>
 				</div>
 			</div>
